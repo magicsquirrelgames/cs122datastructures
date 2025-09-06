@@ -124,9 +124,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.c" />
+    <ClCompile Include="programmingAssignment1.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="FitbitData.csv" />
+    <None Include="Results.csv" />
+    <None Include="test.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="programmingAssignment1.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

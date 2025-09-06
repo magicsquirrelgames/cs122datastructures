@@ -1,122 +1,106 @@
-#define _CRT_SECURE_NO_WARNINGS
+/*
+    Evan Yang
+    9-5-2025
+    Processes data taken from a fitbit over a 24 hour period.
+*/
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-typedef enum sleep
-{
-    NONE = 0, ASLEEP = 1, AWAKE = 2, REALLYAWAKE = 3
-} Sleep;
-
-typedef struct fitbit
-{
-    char patient[10];
-    char minute[9];
-    double calories;
-    double distance;
-    unsigned int floors;
-    unsigned int heartRate;
-    unsigned int steps;
-    Sleep sleepLevel;
-} FitbitData;
-
-FitbitData *parseFile(FILE *inputStream, FitbitData *output);
-char* batheLineInCleansingFire(char* line);
+#include "programmingAssignment1.h";
 
 int main()
 {
+    // open the file
     FitbitData fitbitData[1440];
-
     FILE * inputStream = fopen("FitbitData.csv", "r");
-    if (inputStream != NULL)
+
+    // return if the file could not be opened
+    if (inputStream == NULL)
     {
-        parseFile(inputStream, fitbitData);
+        puts("ERROR: Could not open input file.");
+        return 0;
     }
-    else
+
+    // parse the file
+    parseFile(inputStream, fitbitData);
+
+    // declare variables to hold the results
+    double totalCalories = 0;
+    double totalDistance = 0;
+    unsigned int totalFloors = 0;
+    unsigned int totalSteps = 0;
+    double averageHeartrate = 0;
+    unsigned int maxSteps = 0;
+    unsigned int longestConsecutiveMinutesOfPoorSleep = 0;
+
+    int heartRateCount = 0;
+    int poorSleepCount = 0;
+
+    // calculate the results
+    for (int i = 0; i < 1440; i++)
     {
-        puts("ERROR: Could not open file.");
+        if (fitbitData[i].calories != 99999) totalCalories += fitbitData[i].calories;
+        if (fitbitData[i].distance != 99999) totalDistance += fitbitData[i].distance;
+        if (fitbitData[i].floors != 99999) totalFloors += fitbitData[i].floors;
+        if (fitbitData[i].steps != 99999)
+        {
+            totalSteps += fitbitData[i].steps;
+            if (fitbitData[i].steps > maxSteps)
+            {
+                maxSteps = fitbitData[i].steps;
+            }
+        }
+        if (fitbitData[i].heartRate != 99999)
+        {
+            heartRateCount++;
+            averageHeartrate += fitbitData[i].heartRate;
+        }
+        if (fitbitData[i].sleepLevel < 2)
+        {
+            if (poorSleepCount > longestConsecutiveMinutesOfPoorSleep)
+            {
+                longestConsecutiveMinutesOfPoorSleep = poorSleepCount;
+            }
+            poorSleepCount = 0;
+        }
+        else
+        {
+            poorSleepCount++;
+        }
     }
+    averageHeartrate = averageHeartrate / heartRateCount;
+
+    // open a file to output the data to
+    FILE* outputFile;
+    outputFile = fopen("Results.csv","w");
+
+    // return if the file could not be opened
+    if (outputFile == NULL)
+    {
+        puts("ERROR: Could not open output file.");
+        return 0;
+    }
+
+    // print data to the console and to a file
+    puts("Total Calories,Total Distance,Total Floors,Total Steps,Avg Heartrate,Max Steps,Sleep");
+    fputs("Total Calories,Total Distance,Total Floors,Total Steps,Avg Heartrate,Max Steps,Sleep\n", outputFile);
+
+    printf("%lf,%lf,%d,%d,%lf,%d,%d", totalCalories, totalDistance, totalFloors, totalSteps, averageHeartrate, maxSteps, longestConsecutiveMinutesOfPoorSleep);
+    fprintf(outputFile, "%lf,%lf,%d,%d,%lf,%d,%d\n", totalCalories, totalDistance, totalFloors, totalSteps, averageHeartrate, maxSteps, longestConsecutiveMinutesOfPoorSleep);
+
+    for (int i = 0; i < 1440; i++)
+    {
+        fprintf(outputFile,strcat(fitbitData[i].patient,","));
+        fprintf(outputFile, strcat(fitbitData[i].minute, ","));
+        fprintf(outputFile, "%lf,", fitbitData[i].calories);
+        fprintf(outputFile, "%lf,", fitbitData[i].distance);
+        fprintf(outputFile, "%d,", fitbitData[i].floors);
+        fprintf(outputFile, "%d,", fitbitData[i].heartRate);
+        fprintf(outputFile, "%d,", fitbitData[i].steps);
+        fprintf(outputFile, "%d", fitbitData[i].sleepLevel);
+        fprintf(outputFile, "\n");
+    }
+
+    fclose(inputStream);
+    fclose(outputFile);
+
     return 0;
-}
-
-FitbitData *parseFile(FILE *inputStream, FitbitData *output)
-{
-    char patientID[10] = "";
-    char fitbitDataLine[100] = "";
-
-    // get patient ID
-    fgets(fitbitDataLine, 100, inputStream);
-    strtok(fitbitDataLine, ",");
-    strcpy(patientID, strtok(NULL, ","));
-
-    // skip header line
-    fgets(fitbitDataLine, 100, inputStream);
-
-    // iterate through each line, cleaing the line and then parsing it
-    while(fgets(fitbitDataLine, 100, inputStream) != NULL)
-    {
-        // clean the line
-        batheLineInCleansingFire(fitbitDataLine);
-
-        // read the line into a temporary file
-        FitbitData temp;
-        strcpy(temp.patient, strtok(fitbitDataLine, ","));
-        strcpy(temp.minute, strtok(NULL, ","));
-        temp.calories = atof(strtok(NULL, ","));
-        temp.distance = atof(strtok(NULL, ","));
-        temp.floors = atoi(strtok(NULL, ","));
-        temp.heartRate = atoi(strtok(NULL, ","));
-        temp.steps = atoi(strtok(NULL, ","));
-        temp.sleepLevel = atoi(strtok(NULL, ","));
-
-        // determine the target index for the line
-        char minuteString[10];
-        strcpy(minuteString, temp.minute);
-        int hour = atoi(strtok(minuteString, ":"));
-        int minute = atoi(strtok(NULL, ":"));
-        int index = minute + (hour * 60);
-
-        // save the fitbit data to the array
-        if(temp.patient == patientID)
-        {
-            output[index] = temp;
-        }
-    }
-    return output;
-}
-
-char *batheLineInCleansingFire(char * line)
-{
-    int index = 0;
-    while (line[index + 1] != '\0')
-    {
-        // find missing entries
-        if (line[index] == ',' && line[index + 1] == ',')
-        {
-            index++;
-
-            // make space in the line for the invalid number
-            int indexEnd = index;
-            while (line[indexEnd] != '\0')
-            {
-                indexEnd++;
-            }
-            indexEnd += 5;
-            for (int i = 0; i < 5; i++)
-            {
-                line[indexEnd] = line[indexEnd - 5];
-                indexEnd--;
-            }
-
-            // put 99999 between double commas as an invald number
-            for (int i = 0; i < 5; i++)
-            {
-                line[index] = '9';
-                index++;
-            }
-        }
-        index++;
-    }
-    return line;
 }

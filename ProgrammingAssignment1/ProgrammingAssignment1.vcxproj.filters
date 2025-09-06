@@ -18,10 +18,24 @@
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="programmingAssignment1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="FitbitData.csv">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="test.csv">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Results.csv">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="programmingAssignment1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
