@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2BDEE754-4BDF-4A08-A37C-F1AC02FEF544}|ProgrammingAssignment1.vcxproj|C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment1\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2BDEE754-4BDF-4A08-A37C-F1AC02FEF544}|ProgrammingAssignment1.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BDEE754-4BDF-4A08-A37C-F1AC02FEF544}|ProgrammingAssignment1.vcxproj|C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment1\\FitbitData.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2BDEE754-4BDF-4A08-A37C-F1AC02FEF544}|ProgrammingAssignment1.vcxproj|solutionrelative:FitbitData.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FitbitData.csv",
+              "DocumentMoniker": "C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment1\\FitbitData.csv",
+              "RelativeDocumentMoniker": "FitbitData.csv",
+              "ToolTip": "C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment1\\FitbitData.csv",
+              "RelativeToolTip": "FitbitData.csv",
+              "ViewState": "AgIAAD8DAAAAAAAAAAAAAF4DAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2025-09-06T00:09:20.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.c",
+              "DocumentMoniker": "C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment1\\main.c",
+              "RelativeDocumentMoniker": "main.c",
+              "ToolTip": "C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment1\\main.c",
+              "RelativeToolTip": "main.c",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-09-06T00:08:08.773Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

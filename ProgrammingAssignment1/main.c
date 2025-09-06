@@ -1,8 +1,8 @@
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-const INVALID = 9999999;
 
 typedef enum sleep
 {
@@ -22,13 +22,22 @@ typedef struct fitbit
 } FitbitData;
 
 FitbitData *parseFile(FILE *inputStream, FitbitData *output);
+char* batheLineInCleansingFire(char* line);
 
 int main()
 {
     FitbitData fitbitData[1440];
 
     FILE * inputStream = fopen("FitbitData.csv", "r");
-    parseFile(inputStream, fitbitData);
+    if (inputStream != NULL)
+    {
+        parseFile(inputStream, fitbitData);
+    }
+    else
+    {
+        puts("ERROR: Could not open file.");
+    }
+    return 0;
 }
 
 FitbitData *parseFile(FILE *inputStream, FitbitData *output)
@@ -79,6 +88,35 @@ FitbitData *parseFile(FILE *inputStream, FitbitData *output)
 
 char *batheLineInCleansingFire(char * line)
 {
-    
+    int index = 0;
+    while (line[index + 1] != '\0')
+    {
+        // find missing entries
+        if (line[index] == ',' && line[index + 1] == ',')
+        {
+            index++;
+
+            // make space in the line for the invalid number
+            int indexEnd = index;
+            while (line[indexEnd] != '\0')
+            {
+                indexEnd++;
+            }
+            indexEnd += 5;
+            for (int i = 0; i < 5; i++)
+            {
+                line[indexEnd] = line[indexEnd - 5];
+                indexEnd--;
+            }
+
+            // put 99999 between double commas as an invald number
+            for (int i = 0; i < 5; i++)
+            {
+                line[index] = '9';
+                index++;
+            }
+        }
+        index++;
+    }
     return line;
 }
