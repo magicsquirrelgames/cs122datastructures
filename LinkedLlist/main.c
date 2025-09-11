@@ -25,7 +25,9 @@ typedef struct node
 void initList(Node **list);
 void printList(Node *list);
 int insertAtFront(Node **list, Movie newMovie);
+int insertInOrder(Node **list, Movie newMovie);
 Node *createNode(Movie newMovie);
+Movie deleteAtFront(Node **list);
 
 #endif
 
@@ -36,11 +38,20 @@ int main()
 
     Movie movie1 = {"Alien", 1979};
     Movie movie2 = {"The Matrix", 1999};
+    Movie movie3 = {"Cars", 2006};
+    Movie temp = {"",-1};
     Node *head = NULL;
 
     initList(&head);
+
     insertAtFront(&head, movie1);
     insertAtFront(&head, movie2);
+
+    printList(head);
+
+    temp = deleteAtFront(&head);
+    printf("Data returned: %s\n", temp.title);
+    
     printList(head);
 
     return 0;
@@ -88,4 +99,58 @@ void printList(Node *list)
     }
 
     putchar('\n');
+}
+
+Movie deleteAtFront(Node **list)
+{
+    Node *current = *list;
+    Movie data = current->data;
+
+    *list = current->next;
+    free(current);
+
+    return data;
+}
+
+int insertInOrder(Node **list, Movie newMovie)
+{
+    Node *newNode = createNode(newMovie);
+
+    if(newNode == NULL) return 0;
+
+    Node *current = *list;
+    Node *previous = NULL;
+
+    while(current != NULL && strcmp(newMovie.title,current->data.title) > 0)
+    {
+        previous = current;
+        current = current->next;
+    }
+
+    if(current == NULL)
+    {
+        if(previous == NULL) // list is empty
+        {
+            *list = newNode;
+        }
+        else // insert at the end
+        {
+            previous->next = newNode;
+        }
+    }
+    else
+    {
+        if(previous == NULL) // list has 1 element (insert in front of it)
+        {
+            newNode->next = current;
+            *list = newNode;
+        }
+        else // insert in the middle (insert behind current)
+        {
+            newNode->next = current->next;
+            current->next = newNode;
+        }
+    }
+
+    return 1;
 }

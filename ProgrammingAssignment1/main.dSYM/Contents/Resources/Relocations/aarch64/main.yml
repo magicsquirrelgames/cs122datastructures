@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/evanyang/Documents/GitHub/cs122datastructures/ProgrammingAssignment1/main'
+relocations:     []
+...
