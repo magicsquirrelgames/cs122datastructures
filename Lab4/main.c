@@ -1,21 +1,13 @@
-#include <stdio.h>
+// HOW TO RUN CODE
+// gcc main.c stack.c -o lab4
+// ./lab4
 
-typedef struct stackNode
-{
-    double data;
-    struct stackNode *next;
-}StackNode;
+# include "stack.h"
 
-typedef struct stack
-{
-    StackNode *head;
-}Stack;
-
-int isEmpty(Stack *stack);
-int push(Stack *stack, double newData);
-void pop(Stack *stack);
-
+// MAIN
 int main()
 {
+    
+
     return 0;
 }
