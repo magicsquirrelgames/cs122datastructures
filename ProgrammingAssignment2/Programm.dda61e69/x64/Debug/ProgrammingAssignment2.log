@@ -1,0 +1,27 @@
+﻿  main.c
+C:\Users\block\Documents\GitHub\cs122datastructures\ProgrammingAssignment2\musicManager.h(50,6): warning C4031: second formal parameter list longer than the first list
+  (compiling source file 'main.c')
+  
+C:\Users\block\Documents\GitHub\cs122datastructures\ProgrammingAssignment2\musicManager.h(50,6): warning C4028: formal parameter 1 different from declaration
+  (compiling source file 'main.c')
+  
+C:\Users\block\Documents\GitHub\cs122datastructures\ProgrammingAssignment2\musicManager.h(50,6): warning C4273: 'exit': inconsistent dll linkage
+  (compiling source file 'main.c')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\stdlib.h(56,48):
+      see previous definition of 'exit'
+  
+  musicManager.c
+C:\Users\block\Documents\GitHub\cs122datastructures\ProgrammingAssignment2\musicManager.h(50,6): warning C4031: second formal parameter list longer than the first list
+  (compiling source file 'musicManager.c')
+  
+C:\Users\block\Documents\GitHub\cs122datastructures\ProgrammingAssignment2\musicManager.h(50,6): warning C4028: formal parameter 1 different from declaration
+  (compiling source file 'musicManager.c')
+  
+C:\Users\block\Documents\GitHub\cs122datastructures\ProgrammingAssignment2\musicManager.h(50,6): warning C4273: 'exit': inconsistent dll linkage
+  (compiling source file 'musicManager.c')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\stdlib.h(56,48):
+      see previous definition of 'exit'
+  
+  Generating Code...
+C:\Users\block\Documents\GitHub\cs122datastructures\ProgrammingAssignment2\musicManager.c(82,1): warning C4717: 'showMenu': recursive on all control paths, function will cause runtime stack overflow
+  ProgrammingAssignment2.vcxproj -> C:\Users\block\Documents\GitHub\cs122datastructures\ProgrammingAssignment2\x64\Debug\ProgrammingAssignment2.exe
