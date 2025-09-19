@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{28466B0A-2D6B-45B0-9B18-2073E08A8FC0}|ProgrammingAssignment3.vcxproj|C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\musicManager.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{28466B0A-2D6B-45B0-9B18-2073E08A8FC0}|ProgrammingAssignment3.vcxproj|solutionrelative:musicManager.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28466B0A-2D6B-45B0-9B18-2073E08A8FC0}|ProgrammingAssignment3.vcxproj|C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{28466B0A-2D6B-45B0-9B18-2073E08A8FC0}|ProgrammingAssignment3.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28466B0A-2D6B-45B0-9B18-2073E08A8FC0}|ProgrammingAssignment3.vcxproj|C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\musicManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{28466B0A-2D6B-45B0-9B18-2073E08A8FC0}|ProgrammingAssignment3.vcxproj|solutionrelative:musicManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28466B0A-2D6B-45B0-9B18-2073E08A8FC0}|ProgrammingAssignment3.vcxproj|C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\musicPlayList.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{28466B0A-2D6B-45B0-9B18-2073E08A8FC0}|ProgrammingAssignment3.vcxproj|solutionrelative:musicPlayList.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28466B0A-2D6B-45B0-9B18-2073E08A8FC0}|ProgrammingAssignment3.vcxproj|C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\test.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{28466B0A-2D6B-45B0-9B18-2073E08A8FC0}|ProgrammingAssignment3.vcxproj|solutionrelative:test.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.c",
+              "DocumentMoniker": "C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\main.c",
+              "RelativeDocumentMoniker": "main.c",
+              "ToolTip": "C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\main.c",
+              "RelativeToolTip": "main.c",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-09-17T06:30:54.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "musicManager.c",
+              "DocumentMoniker": "C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\musicManager.c",
+              "RelativeDocumentMoniker": "musicManager.c",
+              "ToolTip": "C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\musicManager.c",
+              "RelativeToolTip": "musicManager.c",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAAAI4AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-09-17T21:27:12.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "musicManager.h",
+              "DocumentMoniker": "C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\musicManager.h",
+              "RelativeDocumentMoniker": "musicManager.h",
+              "ToolTip": "C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\musicManager.h",
+              "RelativeToolTip": "musicManager.h",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-17T21:27:16.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "musicPlayList.csv",
+              "DocumentMoniker": "C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\musicPlayList.csv",
+              "RelativeDocumentMoniker": "musicPlayList.csv",
+              "ToolTip": "C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\musicPlayList.csv",
+              "RelativeToolTip": "musicPlayList.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2025-09-17T21:37:48.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "test.csv",
+              "DocumentMoniker": "C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\test.csv",
+              "RelativeDocumentMoniker": "test.csv",
+              "ToolTip": "C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\test.csv",
+              "RelativeToolTip": "test.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2025-09-17T21:58:33.873Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
