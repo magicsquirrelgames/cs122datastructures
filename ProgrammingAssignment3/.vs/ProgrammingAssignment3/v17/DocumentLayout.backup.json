@@ -15,12 +15,16 @@
       "RelativeMoniker": "D:0:0:{28466B0A-2D6B-45B0-9B18-2073E08A8FC0}|ProgrammingAssignment3.vcxproj|solutionrelative:musicManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28466B0A-2D6B-45B0-9B18-2073E08A8FC0}|ProgrammingAssignment3.vcxproj|C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\musicPlayList.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{28466B0A-2D6B-45B0-9B18-2073E08A8FC0}|ProgrammingAssignment3.vcxproj|solutionrelative:musicPlayList.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{28466B0A-2D6B-45B0-9B18-2073E08A8FC0}|ProgrammingAssignment3.vcxproj|C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\test.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{28466B0A-2D6B-45B0-9B18-2073E08A8FC0}|ProgrammingAssignment3.vcxproj|solutionrelative:test.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28466B0A-2D6B-45B0-9B18-2073E08A8FC0}|ProgrammingAssignment3.vcxproj|C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\test.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{28466B0A-2D6B-45B0-9B18-2073E08A8FC0}|ProgrammingAssignment3.vcxproj|solutionrelative:test.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{28466B0A-2D6B-45B0-9B18-2073E08A8FC0}|ProgrammingAssignment3.vcxproj|C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\test.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{28466B0A-2D6B-45B0-9B18-2073E08A8FC0}|ProgrammingAssignment3.vcxproj|solutionrelative:test.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28466B0A-2D6B-45B0-9B18-2073E08A8FC0}|ProgrammingAssignment3.vcxproj|C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\musicPlayList.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{28466B0A-2D6B-45B0-9B18-2073E08A8FC0}|ProgrammingAssignment3.vcxproj|solutionrelative:musicPlayList.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,7 +44,7 @@
               "RelativeDocumentMoniker": "main.c",
               "ToolTip": "C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\main.c",
               "RelativeToolTip": "main.c",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAADMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-09-17T06:30:54.457Z",
               "EditorCaption": ""
@@ -53,7 +57,7 @@
               "RelativeDocumentMoniker": "musicManager.c",
               "ToolTip": "C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\musicManager.c",
               "RelativeToolTip": "musicManager.c",
-              "ViewState": "AgIAAIEAAAAAAAAAAAAAAJgAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAOoBAAAAAAAAAAAqwPYBAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-09-17T21:27:12.229Z",
               "EditorCaption": ""
@@ -66,7 +70,7 @@
               "RelativeDocumentMoniker": "musicManager.h",
               "ToolTip": "C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\musicManager.h",
               "RelativeToolTip": "musicManager.h",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-09-17T21:27:16.846Z",
               "EditorCaption": ""
@@ -74,27 +78,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "musicPlayList.csv",
-              "DocumentMoniker": "C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\musicPlayList.csv",
-              "RelativeDocumentMoniker": "musicPlayList.csv",
-              "ToolTip": "C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\musicPlayList.csv",
-              "RelativeToolTip": "musicPlayList.csv",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
-              "WhenOpened": "2025-09-17T21:37:48.1Z",
+              "Title": "test.c",
+              "DocumentMoniker": "C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\test.c",
+              "RelativeDocumentMoniker": "test.c",
+              "ToolTip": "C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\test.c",
+              "RelativeToolTip": "test.c",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-09-23T10:46:03.63Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "test.csv",
-              "DocumentMoniker": "C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\test.csv",
-              "RelativeDocumentMoniker": "test.csv",
-              "ToolTip": "C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\test.csv",
-              "RelativeToolTip": "test.csv",
+              "Title": "test.h",
+              "DocumentMoniker": "C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\test.h",
+              "RelativeDocumentMoniker": "test.h",
+              "ToolTip": "C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\test.h",
+              "RelativeToolTip": "test.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-23T10:44:30.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "musicPlayList.csv",
+              "DocumentMoniker": "C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\musicPlayList.csv",
+              "RelativeDocumentMoniker": "musicPlayList.csv",
+              "ToolTip": "C:\\Users\\block\\Documents\\GitHub\\cs122datastructures\\ProgrammingAssignment3\\musicPlayList.csv",
+              "RelativeToolTip": "musicPlayList.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
-              "WhenOpened": "2025-09-17T21:58:33.873Z",
+              "WhenOpened": "2025-09-17T21:37:48.1Z",
               "EditorCaption": ""
             }
           ]

@@ -1,58 +1,63 @@
 /*
 	Evan Yang
 	9-10-2025
-
-	NEED TO FINISH:
-	store
-	display
-	insert
-	delete
-	edit
-	sort
-	rate
-	play
-	shuffle
-	exit
 */
 
 #include "musicManager.h"
+#include "test.h";
 
 int main()
 {
-	// create the head node
-	Node* head = NULL;
+	printf("Would you like to run test functions or go to the main menu?\n");
+	printf("1) Run Tests\n");
+	printf("2) Main Menu\n");
+	printf("Please make your selection: ");
 
-	// open the input file
-	FILE *inputFile;
-	inputFile = fopen("musicPlayList.csv", "r");
+    char response[100] = "";
+    int selection = 0;
+    int isResponseValid = 0;
 
-	if (inputFile == NULL)
-	{
-		printf("ERROR: Input file could not be opened");
-		return -1;
-	}
+    while (isResponseValid == 0)
+    {
+        isResponseValid = 1;
 
-	// open the output file
-	FILE* outputFile;
-	outputFile = fopen("test.csv", "w");
+        if (fgets(response, sizeof(response), stdin) == NULL)
+        {
+            isResponseValid = 0;
+            printf("Not a valid input. Please enter again: ");
+        }
 
-	if (outputFile == NULL)
-	{
-		printf("ERROR: Output file could not be opened");
-		return -1;
-	}
+        if (isResponseValid)
+        {
+            if (sscanf(response, "%d", &selection) != 1)
+            {
+                isResponseValid = 0;
+                printf("Not a valid input. Please enter a number: ");
+            }
+        }
 
-	/*
-	Duration newDuration = { 3,35 };
-	Record newRecord = { "Swift, Taylor","1989","Shake it Off","Pop",newDuration,12,3 };
+        if (isResponseValid)
+        {
+            switch (selection)
+            {
+            case 1:
+                system("cls");
+                testInsert();
+                testDelete();
+                testShuffle();
+                break;
+            case 2:
+                system("cls");
+                Node* head = NULL;
+                showMenu(&head);
+                break;
+            default:
+                isResponseValid = 0;
+                printf("Not a valid selection. Please make a valid selection: ");
+                break;
+            }
+        }
+    }
 
-	insertAtFront(&head, newRecord);
-	*/
-
-	load(&head, inputFile);
-	store(head, outputFile);
-
-	// show the menu
-	showMenu(&head, inputFile, outputFile);
 	return 0;
 }

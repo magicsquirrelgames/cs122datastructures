@@ -8,6 +8,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <windows.h>
+#include <time.h>
 
 typedef struct duration
 {
@@ -33,18 +35,23 @@ typedef struct node
 	struct node* previous;
 }Node;
 
-void showMenu(Node** head, FILE* inFile, FILE* outFile);
+void showMenu(Node** head);
+void returnToMenu(Node** head);
 
 Node* createNode(Record newData);
 int insertAtFront(Node** head, Record newData);
+int insertAtBack(Node** head, Record newData);
+int size(Node* head);
 
-Node* load(Node** head, FILE* inputFile);
-void store(Node* head, FILE* outputFile);
-
-void display();
-void display(char* targetArtist);
-
-void edit(Node* head, char* targetArtist, Record newData);
-void rate(Node* head, char* targetTitle, int newRating);
-void play(Node* head, char* targetTitle);
-void exit(Node* head, FILE* outputFile);
+void load(Node** head);
+void store(Node* head);
+void display(Node* head);
+void insert(Node** head);
+void delete(Node** head);
+void edit(Node* head);
+void sort(Node* head);
+void swap(Node* node1, Node* node2);
+void rate(Node* head);
+void play(Node* head);
+void shuffle(Node* head);
+void exitProgram(Node* head);
