@@ -15,9 +15,9 @@ class DietPlan
         ~DietPlan();
         DietPlan &operator= (const DietPlan &rhs);
 
-        int getGoal();
-        string getName();
-        string getDate();
+        const int getGoal() const;
+        const string getName() const;
+        const string getDate() const;
 
         void setGoal(int newGoal);
         void setName(string newName);
@@ -31,6 +31,6 @@ class DietPlan
         string date;
 };
 
-std::ostream& operator<< (std::ostream& lhs, DietPlan& rhs);
+std::ostream& operator<< (std::ostream& lhs, const DietPlan& rhs);
 
 std::istream& operator>> (std::istream& lhs, DietPlan& rhs);

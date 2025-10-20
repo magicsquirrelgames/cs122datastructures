@@ -25,17 +25,17 @@ ExercisePlan &ExercisePlan::operator= (const ExercisePlan &rhs)
     return *this;
 }
 
-int ExercisePlan::getGoal()
+const int ExercisePlan::getGoal() const
 {
     return this->goal;
 }
 
-string ExercisePlan::getName()
+const string ExercisePlan::getName() const
 {
     return this->name;
 }
 
-string ExercisePlan::getDate()
+const string ExercisePlan::getDate() const
 {
     return this->date;
 }
@@ -66,4 +66,27 @@ void ExercisePlan::editGoal()
     setGoal(newGoal);
 
     cout << "Goal updated.\n";
+}
+
+std::ostream& operator<< (std::ostream& lhs, const ExercisePlan& rhs)
+{
+    lhs << rhs.getName() << std::endl << rhs.getGoal() << std::endl << rhs.getDate() << std::endl;
+    return lhs;
+}
+
+std::istream& operator>> (std::istream& lhs, ExercisePlan& rhs)
+{
+    string newName;
+    int newGoal;
+    string newDate;
+
+    lhs >> newName;
+    lhs >> newGoal;
+    lhs >> newDate;
+
+    rhs.setName(newName);
+    rhs.setGoal(newGoal);
+    rhs.setDate(newDate);
+
+    return lhs;
 }
